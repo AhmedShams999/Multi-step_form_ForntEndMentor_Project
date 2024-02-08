@@ -38,6 +38,9 @@ function App() {
   ] 
 
   useEffect(() => {
+    if(window.innerWidth<=700){
+      setPhoneSize(true);
+    }
     const handleWindowResize = () => {
       if(window.innerWidth<=700){
         setPhoneSize(true);
