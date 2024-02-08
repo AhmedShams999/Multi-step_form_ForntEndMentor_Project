@@ -38,10 +38,11 @@ body {
 }
 @media (max-width: 700px) {
   .container {
-    width: 450px;
+    width: 350px;
     height: -moz-fit-content;
     height: fit-content;
-    margin-top: 150px;
+    margin-top: 120px;
+    padding: 0px 12px;
   }
 }
 .container__left {
@@ -65,7 +66,7 @@ body {
 }
 .container__left__steps {
   position: absolute;
-  top: 60px;
+  top: 40px;
   left: 20px;
   display: flex;
   flex-direction: column;
@@ -144,20 +145,26 @@ body {
 }
 @media (max-width: 700px) {
   .container__right__top {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
 }
 .container__right__top h1 {
   color: var(--Marine_blue);
   margin-bottom: 15px;
 }
+@media (max-width: 700px) {
+  .container__right__top h1 {
+    font-size: 1.6rem;
+    margin-bottom: 8px;
+  }
+}
 .container__right__top p {
   color: var(--Cool_gray);
 }
 @media (max-width: 700px) {
   .container__right__top p {
-    font-size: 1.1rem;
-    line-height: 25px;
+    font-size: 0.9rem;
+    line-height: 22px;
   }
 }
 .container__right__mid {
@@ -188,6 +195,12 @@ body {
   border-radius: 6px;
   font-size: 1rem;
   text-indent: 8px;
+}
+@media (max-width: 700px) {
+  .container__right__mid__input input {
+    height: 40px;
+    font-size: 0.9rem;
+  }
 }
 .container__right__mid__input input.error {
   border: 1px solid var(--Strawberry_red);
@@ -268,9 +281,10 @@ body {
     height: -moz-fit-content;
     height: fit-content;
     flex-direction: row;
-    align-items: center;
+    align-items: start;
     justify-content: start;
     gap: 20px;
+    padding: 15px 15px;
   }
 }
 .container__right__mid__allCards__card:hover {
@@ -285,10 +299,20 @@ body {
   font-size: 1.1rem;
   margin-bottom: 5px;
 }
+@media (max-width: 700px) {
+  .container__right__mid__allCards__card div h3 {
+    font-size: 1rem;
+  }
+}
 .container__right__mid__allCards__card div p {
   color: var(--Cool_gray);
   font-size: 0.9rem;
   margin-bottom: 5px;
+}
+@media (max-width: 700px) {
+  .container__right__mid__allCards__card div p {
+    font-size: 0.8rem;
+  }
 }
 .container__right__mid__allCards__card div .info {
   color: var(--Marine_blue);
@@ -311,6 +335,11 @@ body {
 .container__right__mid__toggle p {
   color: var(--Cool_gray);
   font-weight: 600;
+}
+@media (max-width: 700px) {
+  .container__right__mid__toggle p {
+    font-size: 0.9rem;
+  }
 }
 
 .errorP {
@@ -374,6 +403,11 @@ body {
   transition: all 0.2s ease-in-out;
   cursor: pointer;
 }
+@media (max-width: 700px) {
+  .container__right__mid__allSelections__selection {
+    padding: 20px 8px;
+  }
+}
 .container__right__mid__allSelections__selection:hover {
   border: 1px solid var(--Purplish_blue);
 }
@@ -386,21 +420,43 @@ body {
   color: var(--Purplish_blue);
   font-weight: 500;
 }
+@media (max-width: 700px) {
+  .container__right__mid__allSelections__selection p {
+    font-size: 0.9rem;
+  }
+}
 .container__right__mid__allSelections__selection div h3 {
   font-size: 1.2rem;
   margin-bottom: 3px;
   color: var(--Marine_blue);
+}
+@media (max-width: 700px) {
+  .container__right__mid__allSelections__selection div h3 {
+    font-size: 1rem;
+  }
 }
 .container__right__mid__allSelections__selection div p {
   font-size: 1rem;
   color: var(--Cool_gray);
   font-weight: 400;
 }
+@media (max-width: 700px) {
+  .container__right__mid__allSelections__selection div p {
+    font-size: 0.9rem;
+  }
+}
 .container__right__mid__allSelections__selection input {
   margin-right: 30px;
   width: 20px;
   height: 20px;
   accent-color: var(--Purplish_blue);
+}
+@media (max-width: 700px) {
+  .container__right__mid__allSelections__selection input {
+    margin-right: 15px;
+    width: 18px;
+    height: 18px;
+  }
 }
 
 .container__right__mid__summary {
@@ -410,6 +466,11 @@ body {
   padding: 25px;
   border-radius: 10px;
   background-color: var(--Magnolia);
+}
+@media (max-width: 700px) {
+  .container__right__mid__summary {
+    padding: 20px;
+  }
 }
 .container__right__mid__summary hr {
   width: 100%;
@@ -450,6 +511,11 @@ body {
   display: flex;
   padding: 0 30px;
   align-items: center;
+}
+@media (max-width: 700px) {
+  .container__right__mid__Overall {
+    padding: 0 20px;
+  }
 }
 .container__right__mid__Overall p {
   margin-left: auto;

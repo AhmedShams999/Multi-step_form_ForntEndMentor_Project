@@ -9,9 +9,10 @@
   padding: 12px;
 
   @include desktop {
-    width: 450px;
+    width: 350px;
     height: fit-content; 
-    margin-top: 150px;
+    margin-top: 120px;
+    padding: 0px 12px;
   }
 
   &__left{
@@ -34,7 +35,7 @@
 
     &__steps{
       position: absolute;
-      top: 60px;
+      top: 40px;
       left: 20px;
       display: flex;
       flex-direction: column;
@@ -114,20 +115,21 @@
     &__top{
       margin-bottom: 40px;
       @include desktop {
-      margin-bottom: 30px;
+        margin-bottom: 20px;
       }
       & h1{
         color: var(--Marine_blue);
         margin-bottom: 15px;
         @include desktop {
-        
+          font-size: 1.6rem;
+          margin-bottom: 8px;
         }
       }
       & p{
         color: var(--Cool_gray);
         @include desktop {
-          font-size: 1.1rem;
-          line-height: 25px;
+          font-size: 0.9rem;
+          line-height: 22px;
         }
       }
     }
@@ -162,6 +164,10 @@
           border-radius: 6px;
           font-size: 1rem;
           text-indent: 8px;
+          @include desktop {
+            height: 40px;
+            font-size: 0.9rem;
+          }
           &.error{
             border: 1px solid var(--Strawberry_red);
           }

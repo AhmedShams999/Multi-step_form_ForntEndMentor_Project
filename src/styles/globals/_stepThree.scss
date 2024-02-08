@@ -13,6 +13,9 @@
     transition: all 0.2s ease-in-out;
     cursor: pointer;
 
+    @include desktop {
+      padding: 20px 8px;
+    }
     &:hover{
       border: 1px solid var(--Purplish_blue);
     }
@@ -25,6 +28,9 @@
       margin-left: auto;
       color: var(--Purplish_blue);
       font-weight: 500;
+      @include desktop {
+        font-size: 0.9rem;
+      }
     }
 
     & div{
@@ -32,12 +38,18 @@
         font-size: 1.2rem;
         margin-bottom: 3px;
         color: var(--Marine_blue);
+        @include desktop {
+          font-size: 1rem;
+        }
       }
 
       & p{
         font-size: 1rem;
         color: var(--Cool_gray);
         font-weight: 400;
+        @include desktop {
+          font-size: 0.9rem;
+        }
       }
     }
 
@@ -46,6 +58,11 @@
       width: 20px;
       height: 20px;
       accent-color: var(--Purplish_blue);
+      @include desktop {
+        margin-right: 15px;
+        width: 18px;
+        height: 18px;
+      }
     }
   }
 }

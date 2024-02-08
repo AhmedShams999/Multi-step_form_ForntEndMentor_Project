@@ -7,6 +7,10 @@
   padding: 25px;
   border-radius: 10px;
   background-color: var(--Magnolia);
+  @include desktop {
+    padding: 20px;
+
+  }
   & hr{
     width: 100%;
     height: 1px;
@@ -28,6 +32,7 @@
       }
       & h3{
         color: var(--Marine_blue);
+
       }
     }
       
@@ -56,6 +61,11 @@
   display: flex;
   padding: 0 30px;
   align-items: center;
+
+  @include desktop {
+    padding: 0 20px;
+  }
+  
   & p{
     margin-left: auto;
     color: var(--Purplish_blue);
