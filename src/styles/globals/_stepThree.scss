@@ -1,0 +1,51 @@
+@import "stepTwo";
+
+.container__right__mid__allSelections{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  &__selection{
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--Light_gray);
+    padding: 20px 25px;
+    border-radius: 10px;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+
+    &:hover{
+      border: 1px solid var(--Purplish_blue);
+    }
+    
+    &.active{
+      background-color: var(--Magnolia);
+      border: 1px solid var(--Purplish_blue);
+    }
+    & p{
+      margin-left: auto;
+      color: var(--Purplish_blue);
+      font-weight: 500;
+    }
+
+    & div{
+      & h3{
+        font-size: 1.2rem;
+        margin-bottom: 3px;
+        color: var(--Marine_blue);
+      }
+
+      & p{
+        font-size: 1rem;
+        color: var(--Cool_gray);
+        font-weight: 400;
+      }
+    }
+
+    & input{
+      margin-right: 30px;
+      width: 20px;
+      height: 20px;
+      accent-color: var(--Purplish_blue);
+    }
+  }
+}

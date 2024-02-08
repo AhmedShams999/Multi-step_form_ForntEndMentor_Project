@@ -1,0 +1,29 @@
+@import "multiMedia";
+
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*, *::before,*::after{
+  box-sizing: inherit;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  font-family: 'Ubuntu', sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-color: var(--Light_gray);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include desktop {
+    align-items: start;
+  }
+}

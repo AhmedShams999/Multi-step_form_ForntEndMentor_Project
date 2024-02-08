@@ -1,0 +1,44 @@
+@import "stepFour";
+
+.container__right__confirm{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  gap: 15px;
+  animation: slidein 0.5s ease-in-out forwards;
+  @include desktop {
+   padding: 100px 0;
+  }
+  & h1{
+    color: var(--Marine_blue);
+    margin-top: 20px;
+    font-size: 2.5rem;
+  }
+  & p{
+    text-align: center;
+    line-height: 25px;
+    font-size: 1.03rem;
+    color: var(--Cool_gray);
+    @include desktop {
+      font-size: 1.1rem;
+     }
+  }
+}
+
+
+@keyframes slidein {
+  0% {
+    transform: scale(0.8);
+  }
+
+  50%{
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
