@@ -10,12 +10,15 @@
   gap: 15px;
   animation: slidein 0.5s ease-in-out forwards;
   @include desktop {
-   padding: 100px 0;
+   padding: 80px 0;
   }
   & h1{
     color: var(--Marine_blue);
     margin-top: 20px;
     font-size: 2.5rem;
+    @include desktop {
+      font-size: 2rem;
+    }
   }
   & p{
     text-align: center;
@@ -23,7 +26,7 @@
     font-size: 1.03rem;
     color: var(--Cool_gray);
     @include desktop {
-      font-size: 1.1rem;
+      font-size: 1rem;
      }
   }
 }
@@ -36,6 +39,9 @@
 
   50%{
     transform: scale(1.2);
+    @include desktop {
+      transform: scale(1.1);
+    }
   }
 
   100% {

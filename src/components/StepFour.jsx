@@ -10,7 +10,7 @@ export default function StepFour({handleClickNext,handleClickPrev,handlerChange,
     return addOnsSelected.map(item=>{
       return <div key={item.id} className='container__right__mid__summary__section'>
               <h5>{item.name}</h5>
-              <p>+${item.price}{type == "Monthly"?"/mo":"/yr"}</p>
+              <p className='container__right__mid__summary__section__random'>+${item.price}{type == "Monthly"?"/mo":"/yr"}</p>
           </div>
     })
   }

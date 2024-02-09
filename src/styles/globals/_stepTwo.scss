@@ -26,10 +26,10 @@
        width: 100%;
        height: fit-content;
        flex-direction: row;
-       align-items: start;
+       align-items: center;
        justify-content: start;
        gap: 20px;
-       padding: 15px 15px;
+       padding: 10px 15px;
      }
 
     &:hover{
@@ -46,7 +46,7 @@
       font-size: 1.1rem;
       margin-bottom: 5px;
       @include desktop {
-        font-size: 1rem;
+        font-size: 0.9rem;
       }
     }
 
@@ -55,13 +55,16 @@
       font-size: 0.9rem;
       margin-bottom: 5px;
       @include desktop {
-        font-size: 0.8rem;
+        font-size: 0.7rem;
       }
     }
     & div .info{
       color: var(--Marine_blue);
       font-size: 0.9rem;
       margin-bottom: 0;
+      @include desktop {
+        font-size: 0.7rem;
+      }
     }
   }
 }
@@ -74,6 +77,11 @@
   height: 50px;
   border-radius: 12px;
   background-color: var(--Magnolia);
+  @include desktop {
+    border-radius: 8px;
+    height: 40px;
+
+  }
 
   & p.active{
     color: var(--Marine_blue);
@@ -82,7 +90,7 @@
     color: var(--Cool_gray);
     font-weight: 600;
     @include desktop {
-      font-size: 0.9rem;
+      font-size: 0.8rem;
     }
   }
 }
@@ -91,6 +99,9 @@
   align-self: center;
   font-weight: 500;
   color: var(--Strawberry_red);
+  @include desktop {
+    font-size: 0.8rem;
+  }
 }
 
 .switch {
@@ -98,7 +109,12 @@
   display: inline-block;
   width: 50px;
   height: 24px;
-  
+
+  @include desktop {
+    height: 20px;
+    width: 40px;
+  }
+
   & input {
     opacity: 0;
     width: 0;
@@ -108,6 +124,9 @@
       -webkit-transform: translateX(26px);
       -ms-transform: translateX(26px);
       transform: translateX(26px);
+      @include desktop {
+        transform: translateX(18px);
+      }
     }
   }
 
@@ -138,6 +157,11 @@
       background-color: white;
       -webkit-transition: .4s;
       transition: .4s;
+      @include desktop {
+        height: 13px;
+        width: 13px;
+      }
+      
     }
   }
 }
